@@ -1,5 +1,5 @@
 def get_file():
-    file = open('lemoncake206.github.io/writing_storage.txt', 'r')
+    file = open('writing_storage.txt', 'r')
     line = file.readline().strip()
     lines = []
     count = 0
@@ -15,7 +15,7 @@ def get_file():
     return lines
         
 def rewrite_file(lines):
-    file = open('lemoncake206.github.io/writing_storage.txt', 'w')
+    file = open('writing_storage.txt', 'w')
     for line in lines:
         file.write(str(line))
         file.write('\n')
