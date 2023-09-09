@@ -26,7 +26,7 @@ def add_value(name: str, amount: int):
     lines = get_file()
     for x in range(len(lines)):
         if lines[x] == name:
-            lines[x+1] += str(amount)
+            lines[x+1] += int(amount)
     rewrite_file(lines)
             
 
@@ -34,5 +34,5 @@ def subtract_value(name: str, amount: int):
     lines = get_file()
     for x in range(len(lines)):
         if lines[x] == name:
-            lines[x+1] -= str(amount)
+            lines[x+1] -= int(amount)
     rewrite_file(lines)
