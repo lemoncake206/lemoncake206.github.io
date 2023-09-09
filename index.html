@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang = 'en'>
 <html>
    <head>
       <title> Kate and Eli's Writing Challenge </title>
@@ -19,7 +20,13 @@
          <p>Kate:</p>
          <p>Eli:</p> 
          <h1>Input Words Written:</h1>
-         <py-script></py-script>
+         <form action = "/url" method="GET">
+            <p>Enter your name:</p>
+            <input type='text' name='name'>
+            <p>Enter the amount of words you've written:</p>
+            <input type='number' amount='amount'>
+            <button type="submit">Submit</button>button>
+         </form>
       </main>
    </body>
 </html>
