@@ -23,6 +23,11 @@
          <div><object data="writing_storage.txt"></object></div>
          <br>
          <h1>Input Words Written:</h1>
+         <py-script>
+            name = input('Write your name:')
+            amount = input('Write the amount of words you wrote:')
+            add_amount(name, amount)
+         </py-script>
          <form action = "/url" method="GET">
             <p>Enter your name and amount of words written:</p>
             <input type='text' name='name' placeholder='Name' required>
