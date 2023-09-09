@@ -1,5 +1,5 @@
 def get_file():
-    file = open('writing_storage.txt', 'r')
+    file = open('lemoncake206.github.io/writing_storage.txt', 'r')
     line = file.readline().strip()
     lines = []
     count = 0
