@@ -3,31 +3,14 @@
 <html>
    <head>
       <title> Kate and Eli's Writing Challenge </title>
-      <link rel="stylesheet" href="https://pyscript.net/releases/2022.12.1/pyscript.css" />
-      <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"></script>
    </head>
    <body>
-      <py-config>
-         [[fetch]]
-         files = ["writing_program.py", "writing_storage.txt"]
-      </py-config>
-      <py-script>
-         from writing_program import add_value, subtract_value, get_file, rewrite_file
-      </py-script>
       <header>
       <h1>Kate and Eli's Writing Challenge</h1>
       </header>
       <main>
-         <br>
          <h1>Total Words Written:</h1>
          <div><object data="writing_storage.txt"></object></div>
-         <br>
-         <h1>Input Words Written:</h1>
-         <py-script>
-            name = input('Write your name:')
-            amount = input('Write the amount of words you wrote:')
-            add_value(name, amount)
-         </py-script>
       </main>
    </body>
 </html>
